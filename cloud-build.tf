@@ -1,5 +1,5 @@
 resource "google_cloudbuild_trigger" "github_push_trigger" {
-  name     = "gcp-source-trigger"
+  name     = "github-push-master-trigger"
   filename = "cloudbuild.yaml"
 
   trigger_template {
