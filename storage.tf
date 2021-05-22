@@ -14,7 +14,7 @@ resource "google_storage_bucket_access_control" "static_site_public" {
   role       = "READER"
   entity     = "allUsers"
   depends_on = [
-    google_storage_bucket_iam_policy.bucket_iam_policy
+    google_storage_bucket_iam_policy.static_site_iam_policy
   ]
 }
 
